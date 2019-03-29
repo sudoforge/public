@@ -12,7 +12,7 @@ at to the following locations:
 
 | URL                      | File                                         |
 | ------------------------ | -------------------------------------------- |
-| sudoforge.com/pgp        | gpg/C87073923F4C2CB44B0AA5EB62202C845DF563B5 |
+| sudoforge.com/gpg        | gpg/C87073923F4C2CB44B0AA5EB62202C845DF563B5 |
 | sudoforge.com/ssh/code-1 | ssh/code-1                                   |
 
 My OpenPGP key is also available at the various public keyservers and pools.
