@@ -34,7 +34,7 @@ pubkey. You can do this by adding the parameter `--keyserver <path>` before the
 ### Comparing my GPG public key to one in your keyring
 
 ```
-diff <(gpg --export --armor C87073923F4C2CB44B0AA5EB62202C845DF56EB5) <(curl -s sudoforge.com/gpg)
+diff <(gpg --export --armor C87073923F4C2CB44B0AA5EB62202C845DF56EB5) <(curl -Ls sudoforge.com/gpg)
 ```
 
 ### Encrypting a file before sending it to me
