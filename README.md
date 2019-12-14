@@ -1,4 +1,4 @@
-# bddenhartog/public
+# public
 
 A collection of my public SSH and GPG keys.
 
