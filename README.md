@@ -12,8 +12,8 @@ at to the following locations:
 
 | URL                      | File                                         |
 | ------------------------ | -------------------------------------------- |
-| sudoforge.com/gpg        | gpg/C87073923F4C2CB44B0AA5EB62202C845DF563B5 |
-| sudoforge.com/ssh        | ssh/F651E22E9EBFE27C96A7F60C80272DB46369F522 |
+| sudoforge.com/gpg        | gpg/39E702F59F8159569584E41934EAB0EAB9A964BB |
+| sudoforge.com/ssh        | ssh/AEABCFDC9C45B55C1018F82DFCE484D0DF41463D |
 
 My OpenPGP key is also available at the various public keyservers and pools.
 
@@ -24,7 +24,7 @@ Read below for common actions that utilize my public encryption key.
 ### Importing my public key to your keyring
 
 ```
-gpg --recv-keys C87073923F4C2CB44B0AA5EB62202C845DF56EB5
+gpg --recv-keys 39E702F59F8159569584E41934EAB0EAB9A964BB
 ```
 
 _Note: You may find that you need to use a keyserver in order to receive my
@@ -34,7 +34,7 @@ pubkey. You can do this by adding the parameter `--keyserver <path>` before the
 ### Comparing my GPG public key to one in your keyring
 
 ```
-diff <(gpg --export --armor C87073923F4C2CB44B0AA5EB62202C845DF56EB5) <(curl -Ls sudoforge.com/gpg)
+diff <(gpg --export --armor 39E702F59F8159569584E41934EAB0EAB9A964B) <(curl -Ls sudoforge.com/gpg)
 ```
 
 ### Encrypting a file before sending it to me
@@ -42,7 +42,7 @@ diff <(gpg --export --armor C87073923F4C2CB44B0AA5EB62202C845DF56EB5) <(curl -Ls
 To encrypt a file before sending it to me, simply execute the following:
 
 ```
-gpg --encrypt --recipient C87073923F4C2CB44B0AA5EB62202C845DF56EB5 <path>
+gpg --encrypt --recipient 39E702F59F8159569584E41934EAB0EAB9A964BB <path>
 ```
 
 ### Encrypting a message before sending it to me
@@ -51,7 +51,7 @@ Maybe you don't have a file; maybe you just want to encrypt `stdout`. To do
 that, pipe the contents of whatever you are encrypting to `gpg` like so:
 
 ```
-echo "hello world!" | gpg --encrypt --armor --recipient C87073923F4C2CB44B0AA5EB62202C845DF56EB5
+echo "hello world!" | gpg --encrypt --armor --recipient 39E702F59F8159569584E41934EAB0EAB9A964BB
 ```
 
 The encrypted message will be output to `stdout`. You can then do with it what
